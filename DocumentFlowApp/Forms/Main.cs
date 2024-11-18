@@ -30,6 +30,7 @@ namespace DocumentFlowApp
 
         private async void Main_Load(object sender, EventArgs e)
         {
+            /*
             CurrentUser = new User
             {
                 IsAdmin = true,
@@ -38,8 +39,9 @@ namespace DocumentFlowApp
                 Id = 1,
                 PasswordHash = "",
             };
+            */
 
-            //_formFactory.Create<fAuth>()?.ShowDialog();
+            _formFactory.Create<fAuth>()?.ShowDialog();
 
             if (CurrentUser == null)
             {
